@@ -3,28 +3,25 @@ import { Image } from 'astro:assets';
 import dragon from '../../public/dragon.jpeg'
 import {Icon} from 'astro-icon/components';
 ---
-<header class="flex items-start space-x-4 my-8">
-  <Image src={dragon} alt="black and white picture of me in a dragon pond" height={350} width={200} class="flex-none"/>
-  <div class="flex flex-col">
-    <h1 class="text-4xl">J. Pedro Arouca</h1>
-    <p>Architect, programmer, and sysadmin and data engineer with a passion for technology and programming. I try to make cblol and wayland suck less.</p>
-    <div class="flex flex-wrap mt-6">
-      <nav class="flex space-x-4">
-        <ul class="flex space-x-4">
-          <li><a href="https://www.github.com/jparouca" target="_blank" class="hover:text-red-500"><Icon name="mdi:github"/></Icon></a></li>
-          <li><a href="https://www.https://twitter.com/kaxo_ta" target="_blank" class="hover:text-red-500"><Icon name="mdi:twitter"/></a></li>
-          <li><a href="https://www.linkedin.com/in/jparouca" target="_blank" class="hover:text-red-500"><Icon name="mdi:linkedin" /></a></li>
-          <li><a href="https://www.twitch.tv/takaxo1" target="_blank" class="hover:text-red-500"><Icon name="mdi:twitch"/></a></li>
-        </ul>
-      </nav>
-      <div>
-        <a href="mailto:joaopearoucaa@gmail.com" class="underline hover:text-red-500">joaopearoucaa@gmail.com</a>
-        <a href="#" class="underline hover:text-red-500">My writings.</a>
-      </div>
+<header class="flex flex-col lg:flex-row items-start space-x-0 lg:space-x-4 my-8">
+    <Image src={dragon} alt="black and white picture of me in a dragon pond" height={350} width={200} class="flex-none"/>
+    <div class="flex flex-col lg:w-1/2">
+        <h1 class="text-4xl mt-4 md:mt-0">J. Pedro Arouca</h1>
+        <p class="text-sm lg:text-base">Architect, programmer, sysadmin, and data engineer with a passion for technology and programming. I try to make CBLOL and Wayland suck less.</p>
+        <div class="flex flex-wrap mt-6">
+            <nav class="flex flex-wrap lg:flex-nowrap lg:space-x-4">
+                <ul class="flex flex-wrap space-x-4 lg:space-x-0 lg:flex-nowrap">
+                    <li><a href="https://www.github.com/jparouca" target="_blank" class="hover:text-red-500"><Icon name="mdi:github"/></a></li>
+                    <li><a href="https://www.https://twitter.com/kaxo_ta" target="_blank" class="hover:text-red-500"><Icon name="mdi:twitter"/></a></li>
+                    <li><a href="https://www.linkedin.com/in/jparouca" target="_blank" class="hover:text-red-500"><Icon name="mdi:linkedin" /></a></li>
+                    <li><a href="https://www.twitch.tv/takaxo1" target="_blank" class="hover:text-red-500"><Icon name="mdi:twitch"/></a></li>
+                </ul>
+            </nav>
+            <div class="mt-2 lg:mt-0">
+                <a href="mailto:joaopearoucaa@gmail.com" class="underline hover:text-red-500">joaopearoucaa@gmail.com</a>
+                <a href="#" class="underline hover:text-red-500">My writings.</a>
+            </div>
+        </div>
     </div>
-  </div>
 </header>
 
-
-<style>
-</style>
