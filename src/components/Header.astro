@@ -1,0 +1,30 @@
+---
+import { Image } from 'astro:assets';
+import dragon from '../../public/dragon.jpeg'
+import {Icon} from 'astro-icon/components';
+---
+<header class="flex items-start space-x-4 my-8">
+  <Image src={dragon} alt="black and white picture of me in a dragon pond" height={350} width={200} class="flex-none"/>
+  <div class="flex flex-col">
+    <h1 class="text-4xl">J. Pedro Arouca</h1>
+    <p>Architect, programmer, and sysadmin and data engineer with a passion for technology and programming. I try to make cblol and wayland suck less.</p>
+    <div class="flex flex-wrap mt-6">
+      <nav class="flex space-x-4">
+        <ul class="flex space-x-4">
+          <li><a href="https://www.github.com/jparouca" target="_blank" class="hover:text-red-500"><Icon name="mdi:github"/></Icon></a></li>
+          <li><a href="https://www.https://twitter.com/kaxo_ta" target="_blank" class="hover:text-red-500"><Icon name="mdi:twitter"/></a></li>
+          <li><a href="https://www.linkedin.com/in/jparouca" target="_blank" class="hover:text-red-500"><Icon name="mdi:linkedin" /></a></li>
+          <li><a href="https://www.twitch.tv/takaxo1" target="_blank" class="hover:text-red-500"><Icon name="mdi:twitch"/></a></li>
+        </ul>
+      </nav>
+      <div>
+        <a href="mailto:joaopearoucaa@gmail.com" class="underline hover:text-red-500">joaopearoucaa@gmail.com</a>
+        <a href="#" class="underline hover:text-red-500">My writings.</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<style>
+</style>

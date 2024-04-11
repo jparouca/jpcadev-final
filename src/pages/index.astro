@@ -1,0 +1,64 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h5 class="text-2xl">THE HIGHLIGHTS</h5>
+			<div>
+				<h6 class="text-lg font-bold">Hobbies</h6>
+				<p class="font-thin tracking-tighter">watching or play competitive lol, programming (xD duh!) stuffs for wayland (mostly rewrite apps from x11), linux ricing/sisyphus cursed (same thing).</p>
+			</div>
+			<div>
+				<h6 class="text-lg font-bold">Strongest Areas of Knowledge</h6>
+				<p class="font-thin tracking-tighter">Javascript (vanilla, Node, jQuery, Meta/Vercel React), PHP (Laravel), Git, CSS, HTML, Linux</p>
+			</div>
+			<div>
+				<h6 class="text-lg font-bold">Projects I'm Proud Of</h6>
+				<p class="font-thin tracking-tighter">
+					<ul>
+						<li><a href="https://github.com/jparouca/tasb-takaxo-awesome-status-bar-" target="_blank" >TASB</a> (takaxo's awesome status bar) a waybar replacement written in AGS (GJS/GTK 'framework') with mpris connection, chatgpt and gemini, notifications, timers and calendar</li>
+						<li><a href="https://github.com/jparouca/hyprcon" target="_blank">Hyprcon</a> a GUI settings app interface driver in python for hyprland using it's IPC (a better version rewritten in go with Wails is in development)</li>
+						<li><a href="https://github.com/jparouca/goscrapper">LS</a> a leaguepedia scrapper written in Go to feed the <a href="https://oracleselixir.com/" target="_blank">Oracle's Elixir</a> database.</li>
+					</ul>
+				</p>
+			</div>
+			<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+			<div class="mt-6">
+				<div>
+				<h6 class="text-lg font-bold">Employment</h6>
+					<p>Note: Some of these positions overlapped when freelancing.</p>
+				</div>
+				<div>
+					<ul>
+						<li>
+							<h6 class="font-semibold text-lg">Calix Systems</h6>
+							<p class="font-thin ">Freelance Developer, Tenure: 8 months</p>
+						</li>
+
+						<li>
+							<h6 class="font-semibold text-lg">Accenture</h6>
+							<p class="font-thin ">Developer, Tenure: 2 years</p>
+						</li>
+						<li>
+							<h6 class="font-semibold text-lg">IBM: International Business Machine</h6>
+							<p class="font-thin ">Developer, Tenure: 1 year</p>
+						</li>
+						<li>
+							<h6 class="font-semibold text-lg">Frontend Internship</h6>
+							<p class="font-thin ">Internship, Tenure: 6 months</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
